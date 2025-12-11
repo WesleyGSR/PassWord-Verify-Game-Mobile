@@ -32,6 +32,6 @@
 ## RESULTADOS
      O PassWord VeriFy Game, então é um jogo com 14 regras onde o jogador terá que atribuir caracteres e desvendar desafios para conseguir criar uma senha que atenda todos os requisitos do jogo, cada regra e desafio será apresentado sequencialmente para o jogador, se durante o jogo  parte da senha não atenda a condição exigida, a senha será marcada de vermelho indicando a situação para o jogador  e se a senha inteira estiver correta deve ficar verde e passar para a regra a seguir. Durante o jogo, o jogador terá de fazer uso de todos os seus conhecimentos para conseguir finalizar o jogo.0 
 
-## RELATO PESSOAL DE CADA INTEGRANTE
+## DICA PARA NOOBS
 
 Senha pronta: IFCELVAPWVFXXX2255532@domingo
