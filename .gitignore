@@ -25,8 +25,7 @@ macos/
 linux/
 windows/
 node_modules/
-lib/views/auth/
-lib/services/
+/lib/views/auth/
 
 # Android Generated files
 android/local.properties

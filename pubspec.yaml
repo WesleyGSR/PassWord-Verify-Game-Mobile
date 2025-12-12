@@ -32,4 +32,7 @@ flutter:
   assets:
     - assets/images/fechado.png
     - assets/images/aberto.png
-    - assets/images/cadeado.png
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/logo.png"
