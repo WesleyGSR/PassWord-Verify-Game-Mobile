@@ -1,9 +1,9 @@
 plugins {
+    id("com.google.gms.google-services")
     id("com.android.application")
     id("kotlin-android")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
-    id("com.google.gms.google-services") 
 }
 
 android {
@@ -38,10 +38,16 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
-    dependencies {
-    implementation("com.google.android.material:material:<version>")
+    buildScripts {
+        repositories {
+            google()
+            mavenCentral()
+        }
+        dependencies {
+            classpath("com.android.tools.build:gradle:8.2.2")
+            classpath("com.google.gms:google-services:4.3.15")
+        }
     }
-
 }
 
 
