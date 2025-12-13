@@ -12,6 +12,7 @@ flutter_export_environment.sh
 .vscode/
 .idea/
 *.iml
+.env
 
 # Build outputs
 build/
@@ -26,7 +27,6 @@ linux/
 windows/
 node_modules/
 /lib/views/auth/
-/lib/services/
 # Android Generated files
 android/local.properties
 android/key.properties
