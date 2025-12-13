@@ -3,7 +3,7 @@ class PasswordController {
     senha = senha.trim();
 
     if (senha.length < 8) {
-      return "Regra 1: sua senha deve conter pelo menos 8 caracteres.";
+      return "Regra 1: sua senha deve conter pelo menos 8 caracteres!";
     }
     if (!RegExp(r'\d').hasMatch(senha)) {
       return "Regra 2: sua senha deve incluir pelo menos um número.";
@@ -17,11 +17,11 @@ class PasswordController {
 
     final numbers = RegExp(r'\d').allMatches(senha).map((m) => int.parse(m.group(0)!)).toList();
     if (numbers.fold(0, (a, b) => a + b) != 24) {
-      return "Regra 5: a soma dos números deve ser 4! (24).";
+      return "Regra 5: a soma dos números da sua senha devem ser o resultado de 4!(fatorial)";
     }
 
     const dias = [
-      "segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado","domingo"
+      'segunda-feira','terça-feira','quarta-feira','quinta-feira','sexta-feira','sabado','domingo', 'segunda','terca','quarta','quinta','sexta','sabado','domingo'
     ];
     final low = senha.toLowerCase();
     if (!dias.any((d) => low.contains(d))) {
@@ -29,7 +29,7 @@ class PasswordController {
     }
 
     if (!senha.contains("3")) {
-      return "Regra 7: inclua o decimal do binário 0011 (3).";
+      return "Regra 7: sua senha deve incluir o decimal correspondente a '0011'!";
     }
 
     if (!RegExp(r'[IVXLCDM]').hasMatch(senha)) {
@@ -37,7 +37,7 @@ class PasswordController {
     }
 
     if (!senha.contains("VA")) {
-      return "Regra 9: inclua 'VA' (Vaticano).";
+      return "Regra 9: sua senha deve incluir a sigla do menor país do mundo!";
     }
 
     const fib = {1,2,3,5,8};
@@ -46,7 +46,7 @@ class PasswordController {
     }
 
     if (!senha.contains("L")) {
-      return "Regra 11: inclua 'L' (equação de Drake).";
+      return "sua senha deve incluir o último termo da equação de Drake!";
     }
 
     final romanValues = {'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000};
@@ -57,11 +57,11 @@ class PasswordController {
     if (soma != 191) return "Regra 12: soma dos romanos deve ser 191.";
 
     if (!senha.contains("IFCE")) {
-      return "Regra 13: inclua 'IFCE' (código morse traduzido).";
+      return 'Inclua na senha " .. ..-. -.-. . "';
     }
 
     if (!senha.contains("PWV")) {
-      return "Regra 14: Você atentou às letras maiúsculas?";
+      return "Regra 14: A senha deve conter a sigla dos criadores!";
     }
 
     return null;

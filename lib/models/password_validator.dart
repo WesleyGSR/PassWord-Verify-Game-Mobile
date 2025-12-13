@@ -10,7 +10,7 @@ class PasswordValidator {
     if (sum != 24) return "Regra 5: a soma dos números da sua senha devem ser o resultado de 4!(fatorial)";
     const dias = ['segunda-feira','terça-feira','quarta-feira','quinta-feira','sexta-feira','sabado','domingo', 'segunda','terca','quarta','quinta','sexta','sabado','domingo'];
     final lower = senha.toLowerCase();
-    if (!dias.any((e) => lower.contains(e))) return "Regra 6: sua senha deve conter um dia da semena!";
+    if (!dias.any((e) => lower.contains(e))) return "Regra 6: sua senha deve conter um dia da semana!";
     if (!senha.contains('3')) return "Regra 7: sua senha deve incluir o decimal correspondente a '0011'!";
     if (!RegExp(r'[IVXLCDM]').hasMatch(senha)) return "Regra 8: inclua um número romano!";
     if (!senha.contains('VA')) return "Regra 9: sua senha deve incluir a sigla do menor país do mundo!";
