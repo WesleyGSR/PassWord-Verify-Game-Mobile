@@ -7,16 +7,16 @@ class RulesScreen extends StatelessWidget {
 2) Deve conter pelo menos um número.
 3) Deve conter um caractere especial.
 4) Deve conter pelo menos uma letra MAIÚSCULA.
-5) A soma de todos os números deve ser igual a 4!.
-6) Deve conter um dia da semana (ex: segunda-feira).
+5) A soma de todos os números deve ser igual a 4!(fatorial).
+6) Deve conter um dia da semana.
 7) Deve conter o decimal do binário 0011.
-8) Deve conter um número romano (I,V,X,L,C,D,M).
+8) Deve conter um número romano.
 9) Deve conter a sigla do menor país do mundo.
-10) Todos os números devem ser da sequência Fibonacci (1,2,3,5,8).
+10) Todos os números devem ser da sequência Fibonacci.
 11) Deve conter o ultimo termo da equação de Drake.
 12) Soma dos números romanos deve ser 191.
-13) Deve conter IFCE.
-14) Regra especial, a senha deve conter os criadores.
+13) Deve conter " .. ..-. -.-. . "'.
+14) Regra especial, a senha deve conter os criadores (WVP).
 ''';
 
   @override

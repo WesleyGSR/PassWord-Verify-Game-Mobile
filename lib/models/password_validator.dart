@@ -22,7 +22,7 @@ class PasswordValidator {
     for (var ch in senha.split('')) somaRomanos += romanValues[ch] ?? 0;
     if (somaRomanos != 191) return "Regra 12: a soma dos números romanos deve ser 191!";
     if (!senha.contains("IFCE")) return 'Inclua na senha " .. ..-. -.-. . "';
-    if (!senha.contains("WVP")) return "Regra 14: A senha deve conter a sigla dos criadores!";
+    if (!senha.contains("WVP")) return "Regra 14: A senha deve conter a sigla dos criadores WVP!";
     return null;
   }
 

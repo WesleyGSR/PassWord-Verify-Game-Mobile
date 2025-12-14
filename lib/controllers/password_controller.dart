@@ -61,7 +61,7 @@ class PasswordController {
     }
 
     if (!senha.contains("PWV")) {
-      return "Regra 14: A senha deve conter a sigla dos criadores!";
+      return "Regra 14: A senha deve conter a sigla dos criadores! WVP";
     }
 
     return null;
